@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="MIT"
+
+[[mods]]
+modId="shodron"
+version="1.0"
+displayName="Shodron "
+logoFile="examplemod.png"
+credits="Shodron is a mod created by SDKSSH"
+authors="SDKSSH"
+description='''
+Shodron is a mod that add new experiences to player like :
+
+- Minion
+- New Ore
+- Talisman
+- New Mob
+- New Dimension
+- New Armor
+etc...
+'''
+
+[[dependencies.shodron]]
+    modId="forge"
+    mandatory=true
+    versionRange="[37,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.shodron]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1,1.18,1.19)"
+    ordering="NONE"
+    side="BOTH"

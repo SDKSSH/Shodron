@@ -1,5 +1,6 @@
 package me.sdkssh.shodron;
 
+import me.sdkssh.shodron.registeries.ItemRegisteries;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -10,7 +11,7 @@ public class ShodronMod {
     public static final String MOD_ID = "shodron";
     public ShodronMod() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        ItemRegisteries.getItems().register(bus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 }

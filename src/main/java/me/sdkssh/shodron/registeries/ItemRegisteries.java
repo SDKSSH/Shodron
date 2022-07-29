@@ -13,7 +13,7 @@ public class ItemRegisteries {
     @Getter
     private static final DeferredRegister<Item> items = DeferredRegister.create(ForgeRegistries.ITEMS, ShodronMod.MOD_ID);
 
-    public static <T extends Item>RegistryObject<Item> register(String name, Supplier<T> it){
+    public static <T extends Item>RegistryObject<Item> registerItem(String name, Supplier<T> it){
         return items.register(name, it);
     }
 }
